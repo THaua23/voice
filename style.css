@@ -1,0 +1,64 @@
+* {
+   font-family: monospace;
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+}
+
+main {
+   width: 100dvw;
+   height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+
+   h1 {
+      color: gray;
+      font-size: 35px;
+      letter-spacing: 5px;
+   }
+
+   #voice-input {
+      width: 25%;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      color: rgb(77, 77, 77);
+      font-size: 16px;
+      font-weight: bold;
+      min-width: 300px;
+   }
+
+   #voice-btn {
+      background-color: steelblue;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      width: 25%;
+      padding: 15px;
+      border-radius: 5px;
+      min-width: 300px;
+
+      &:active {
+         background-color: rgb(56, 112, 158);
+      }
+   }
+}
+
+.speaking {
+   animation: speaking 0.5s infinite alternate;
+   transition: 0.2s;
+}
+
+@keyframes speaking {
+   from {
+      scale: 1;
+   }
+
+   to {
+      scale: 1.3;
+   }
+}
